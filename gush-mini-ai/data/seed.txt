@@ -1,0 +1,5 @@
+Gush Mini AI is a local learning project.
+It stores trusted text as knowledge.
+It stores training examples as question and answer pairs.
+Its external teacher is optional.
+The long-term goal is to improve the local system while reducing dependence on external models.

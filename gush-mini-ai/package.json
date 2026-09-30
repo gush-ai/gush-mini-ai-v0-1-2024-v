@@ -1,0 +1,19 @@
+{
+  "name": "gush-mini-ai",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A small self-improving local knowledge and language-learning AI starter built with JavaScript/Node.js.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.js",
+    "dev": "node --watch --env-file-if-exists=.env server.js"
+  },
+  "dependencies": {
+    "@google/genai": "^2.24.0",
+    "better-sqlite3": "^13.0.3",
+    "express": "^5.2.1"
+  }
+}

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gush Mini AI</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div>
+        <p class="eyebrow">LOCAL LEARNING SYSTEM</p>
+        <h1>Gush Mini AI</h1>
+        <p class="sub">A small JavaScript brain that stores knowledge, learns examples and answers locally.</p>
+      </div>
+      <div id="teacherBadge" class="badge">Teacher: checking…</div>
+    </header>
+
+    <section class="stats" id="stats"></section>
+
+    <section class="grid">
+      <article class="panel chat-panel">
+        <h2>Talk to the local brain</h2>
+        <div id="messages" class="messages">
+          <div class="message ai">I am ready. Teach me something, or ask what I already know.</div>
+        </div>
+        <form id="chatForm" class="composer">
+          <textarea id="message" placeholder="Ask something…" required></textarea>
+          <button>Send</button>
+        </form>
+      </article>
+
+      <article class="panel">
+        <h2>Teach directly</h2>
+        <label>Question / input</label>
+        <input id="teachInput" placeholder="What is the capital of Nigeria?">
+        <label>Correct answer</label>
+        <textarea id="teachOutput" placeholder="Abuja is the capital of Nigeria."></textarea>
+        <button id="teachBtn">Save lesson</button>
+        <p id="teachStatus" class="status"></p>
+
+        <hr>
+
+        <h2>Ingest trusted text</h2>
+        <input id="ingestTitle" placeholder="Title">
+        <textarea id="ingestText" class="large" placeholder="Paste an article, notes, documentation or other trusted text…"></textarea>
+        <label class="check">
+          <input type="checkbox" id="useTeacher">
+          Let Gemini create Q/A training examples too
+        </label>
+        <button id="ingestBtn">Learn from text</button>
+        <p id="ingestStatus" class="status"></p>
+
+        <hr>
+
+        <h2>Self test</h2>
+        <button id="testBtn" class="secondary">Run 20-question test</button>
+        <pre id="testOutput"></pre>
+      </article>
+    </section>
+  </main>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

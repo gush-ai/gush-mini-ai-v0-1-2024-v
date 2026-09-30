@@ -1,0 +1,28 @@
+{
+  "name": "gush-mini-ai-v0-1-2024-v",
+  "display_name": "gush-mini-ai-v0.1-2024-v",
+  "type": "static-site",
+  "version": "1.0.0",
+  "description": "Imported Archive Project",
+  "author": "Developer",
+  "license": "MIT",
+  "generated_by": "Gush AI Codex V10.5",
+  "generated_at": "2026-09-30T15:02:21.603Z",
+  "files": [
+    "gush-mini-ai/package.json",
+    "gush-mini-ai/server.js",
+    "gush-mini-ai/README.md",
+    "gush-mini-ai/src/teacher.js",
+    "gush-mini-ai/src/text.js",
+    "gush-mini-ai/src/db.js",
+    "gush-mini-ai/src/brain.js",
+    "gush-mini-ai/src/ingest.js",
+    "gush-mini-ai/src/trainer.js",
+    "gush-mini-ai/data/seed.txt",
+    "gush-mini-ai/public/style.css",
+    "gush-mini-ai/public/app.js",
+    "gush-mini-ai/public/index.html",
+    "gush-project.json",
+    ".gitignore"
+  ]
+}
